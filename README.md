@@ -12,12 +12,14 @@ The following excellent blogposts explain in more detail how to set things up:
 ## Set the GCP project
 
 ```sh
-gcloud config set project <project_name>
+gcloud config get-value project
+gcloud projects list
+gcloud config set project <project_id>
 ```
 
 ## Enable APIs
 
-Make sure Cloud Run and Cloud Build APIs are enabled on the GCP project.
+Make sure Cloud Run Admin and Cloud Build APIs are enabled on the GCP project.
 
 ## Set required permissions
 
